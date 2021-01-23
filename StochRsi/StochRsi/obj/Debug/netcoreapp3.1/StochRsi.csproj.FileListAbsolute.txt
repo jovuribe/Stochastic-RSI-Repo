@@ -1,0 +1,4 @@
+C:\Users\jovur\OneDrive\Documents\GitHub\Stochastic-RSI-Repo\StochRsi\StochRsi\obj\Debug\netcoreapp3.1\StochRsi.csprojAssemblyReference.cache
+C:\Users\jovur\OneDrive\Documents\GitHub\Stochastic-RSI-Repo\StochRsi\StochRsi\obj\Debug\netcoreapp3.1\StochRsi.AssemblyInfoInputs.cache
+C:\Users\jovur\OneDrive\Documents\GitHub\Stochastic-RSI-Repo\StochRsi\StochRsi\obj\Debug\netcoreapp3.1\StochRsi.AssemblyInfo.cs
+C:\Users\jovur\OneDrive\Documents\GitHub\Stochastic-RSI-Repo\StochRsi\StochRsi\obj\Debug\netcoreapp3.1\StochRsi.csproj.CoreCompileInputs.cache
