@@ -47,7 +47,7 @@ namespace QuantConnect.Indicators
         /// </summary>
         /// <param name="period">The period over which to perform to computation</param>
         /// <param name="movingAverageType">Moving average of RSI</param>
-        public StochasticRelativeStrengthIndex(int period = 14, MovingAverageType movingAverageType = MovingAverageType.Simple)
+        public StochasticRelativeStrengthIndex(int period = 14, int minPeriod = 14, int maxPeriod = 14, MovingAverageType movingAverageType = MovingAverageType.Simple)
             : this($"STORSI({period}, {movingAverageType})", period, movingAverageType)
         {
         }
@@ -85,10 +85,14 @@ namespace QuantConnect.Indicators
                 return _rsi.Current.Value;
             }
 
+            // Updates RSI Value with close prices
             _rsi.Update(input.Time, input.Close);
+
+            // Updates max and min with RSI value
             _max.Update(input.Time, _rsi.Current.Value);
             _min.Update(input.Time, _rsi.Current.Value);
 
+            // Creates numerator and denominator for the Stochastic RSI value
             numerator = _rsi.Current.Value / _min.Current.Value;
             denominator = _max.Current.Value / _min.Current.Value;
 
